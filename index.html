@@ -3,30 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meal finder</title>
+    <title>Meal Finder App</title>
+   
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="bg-dark text-white text-center py-3">
-        <h1> Meal Finder 🍽️</h1>
-    </header>  
-        <div class="container my-4">
-            <div class="row">
-                <div class="col-md-6 mx-auto">
-                    <input type="text" id="searchInput" class="form-control" placeholder="Search for a meal...">
-                    <button id="searchBtn" class="btn btn-primary w-100 mt-2">Search</button>
-                </div>
-            </div>
 
-            <div id="resultSection" class="row mt-4"></div>
-            <div class="text-center mt-4">
-                <button id="showAllBtn" class="btn btn-secondary d-none">SHOW ALL</button>
-            </div>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Meal Finder</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
         </div>
-        <footer class="bg-dark text-white text-center py-3">
-            <p>&copy; 2025 Meal Finder | Powered by MealDB API</p>
-        </footer>
-        <script src="final.js"></script>
+    </div>
+</nav>
+
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <h1 class="text-center mb-4">Search for a Meal</h1>
+            <div class="input-group mb-3">
+                <input type="text" id="searchBox" class="form-control" placeholder="Enter meal name...">
+                <button class="btn btn-dark" onclick="connect()">Search</button>
+            </div>
+            <div id="displayArea" class="row g-4"></div>
+         
+            <div id="buttonArea" class="text-center mt-4"></div>
+        </div>
+    </div>
+</div>
+
+
+<div class="footer">
+    <p>&copy; 2025 Meal Finder App | 2230647 <a href="https://www.netlify.com/" target="_blank">Netlify</a></p>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="final.js"></script>
+
 </body>
 </html>
+
